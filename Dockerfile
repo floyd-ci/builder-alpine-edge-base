@@ -1,7 +1,7 @@
 FROM floydci/builder-base AS base
 FROM alpine:edge
 
-RUN apk --no-cache add cmake ninja
+RUN apk --no-cache add cmake ninja shadow
 
 COPY --from=base / /
 
